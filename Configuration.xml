@@ -1094,6 +1094,7 @@
 			<CommonCommand>СоздатьЗаметкуПоПредмету</CommonCommand>
 			<CommonCommand>УстановитьРасширениеДляРаботыС1СПредприятием</CommonCommand>
 			<CommonCommand>ФайлыВТоме</CommonCommand>
+			<CommonCommand>ВыгрузитьБазуЗнанийВКаталог</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
 			<CommandGroup>Информация</CommandGroup>
 			<CommandGroup>Органайзер</CommandGroup>
@@ -1372,6 +1373,7 @@
 			<DataProcessor>Планировщик</DataProcessor>
 			<DataProcessor>НачальнаяСтраница</DataProcessor>
 			<DataProcessor>БыстрыйЗаказ</DataProcessor>
+			<DataProcessor>ВыгрузитьБазуЗнанийВКаталог</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>ВерсииПодсистемОбластейДанных</InformationRegister>
 			<InformationRegister>БлокировкиСеансовОбластейДанных</InformationRegister>
