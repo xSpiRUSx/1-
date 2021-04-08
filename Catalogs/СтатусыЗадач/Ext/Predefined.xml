@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.11">
+	<Item id="1321d20e-637e-46c4-8e88-c5590d1461f5">
+		<Name>Новая</Name>
+		<Code>000000001</Code>
+		<Description>1. Новая</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="240bde26-b1d1-4fb1-a1ed-6805915306b5">
+		<Name>ВРаботе</Name>
+		<Code>000000002</Code>
+		<Description>2. В работе</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5d9f4afb-3237-455d-a690-9f6e281e55d7">
+		<Name>Выполнена</Name>
+		<Code>000000004</Code>
+		<Description>3. Выполнена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e19f386e-4b95-4149-bf32-24bb9a8e2aed">
+		<Name>НаПроверке</Name>
+		<Code>000000003</Code>
+		<Description>4. На проверке</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="63c8b94a-6d0d-4a4e-9bc0-575ab2bdadc8">
+		<Name>Отменена</Name>
+		<Code>000000005</Code>
+		<Description>5. Отменена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5db15d8e-f9a3-481b-93be-9b25a6643b17">
+		<Name>Архив</Name>
+		<Code>000000006</Code>
+		<Description>6. Архив</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
