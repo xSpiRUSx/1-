@@ -1064,6 +1064,7 @@
 			<DefinedType>ПрисоединенныйФайл</DefinedType>
 			<DefinedType>ПрисоединенныйФайлОбъект</DefinedType>
 			<DefinedType>ФизическоеЛицо</DefinedType>
+			<DefinedType>НазначениеПлатежа</DefinedType>
 			<CommonCommand>ВремяТекущегоСеанса</CommonCommand>
 			<CommonCommand>ДополнительныеОтчетыАдминистрирование</CommonCommand>
 			<CommonCommand>ЖурналУчетаОригиналовПервичныхДокументов</CommonCommand>
@@ -1328,6 +1329,7 @@
 			<Enum>ЦветаЗаметок</Enum>
 			<Enum>ЦветностиИзображения</Enum>
 			<Enum>ЮрФизЛицо</Enum>
+			<Enum>НазначениеПлатежа</Enum>
 			<Report>БизнесПроцессы</Report>
 			<Report>Задачи</Report>
 			<Report>ЗависшиеЗадачи</Report>

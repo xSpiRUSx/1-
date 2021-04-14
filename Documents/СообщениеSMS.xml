@@ -378,7 +378,11 @@
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
+					<ChoiceParameters>
+						<app:item name="Отбор.Служебный">
+							<app:value xsi:type="xr:DesignTimeRef">Enum.ПорядокОтветовНаЗапросыУведомленийОПрочтении.EnumValue.НикогдаНеОтправлятьУведомление</app:value>
+						</app:item>
+					</ChoiceParameters>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>
