@@ -62,6 +62,7 @@
 					<ChildItems>
 						<InputField name="Статус" id="16">
 							<DataPath>Объект.Статус</DataPath>
+							<ReadOnly>true</ReadOnly>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="СтатусКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="18"/>
@@ -162,33 +163,161 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="51"/>
 							<ChildItems>
-								<InputField name="Дата" id="4">
-									<DataPath>Объект.ДатаНачала</DataPath>
+								<UsualGroup name="Даты" id="101">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Дата начала работы</v8:content>
+											<v8:content>Даты</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
-									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
-								</InputField>
-								<InputField name="ДатаЗавершения" id="28">
-									<DataPath>Объект.ДатаЗавершения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДатаЗавершенияКонтекстноеМеню" id="29"/>
-									<ExtendedTooltip name="ДатаЗавершенияРасширеннаяПодсказка" id="30"/>
-								</InputField>
-								<InputField name="ЗатратыВремени" id="25">
-									<DataPath>Объект.ЗатратыВремени</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ЗатратыВремениКонтекстноеМеню" id="26"/>
-									<ExtendedTooltip name="ЗатратыВремениРасширеннаяПодсказка" id="27"/>
-									<Events>
-										<Event name="OnChange">ЗатратыВремениПриИзменении</Event>
-									</Events>
-								</InputField>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Даты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ДатыРасширеннаяПодсказка" id="102"/>
+									<ChildItems>
+										<InputField name="Дата" id="4">
+											<DataPath>Объект.ДатаНачала</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата начала работы</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+										</InputField>
+										<InputField name="ДатаЗавершения" id="28">
+											<DataPath>Объект.ДатаЗавершения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаЗавершенияКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ДатаЗавершенияРасширеннаяПодсказка" id="30"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЗатратыВремени" id="103">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа затраты времени</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа затраты времени</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ГруппаЗатратыВремениРасширеннаяПодсказка" id="104"/>
+									<ChildItems>
+										<UsualGroup name="Группа2" id="114">
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="115"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация2" id="122">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Добавить время:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация2КонтекстноеМеню" id="123"/>
+													<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="124"/>
+												</LabelDecoration>
+												<PictureDecoration name="Добавить30Мин" id="111">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Добавить30 мин</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>30 мин</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Hyperlink>true</Hyperlink>
+													<Picture>
+														<xr:Ref>StdPicture.AppearanceCircleTwoFourthFilled</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="Добавить30МинКонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="Добавить30МинРасширеннаяПодсказка" id="113"/>
+													<Events>
+														<Event name="Click">Добавить30МинНажатие</Event>
+													</Events>
+												</PictureDecoration>
+												<PictureDecoration name="ДобавитьЧас" id="116">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Добавить час</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>1 час</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Hyperlink>true</Hyperlink>
+													<Picture>
+														<xr:Ref>StdPicture.AppearanceCircleFilled</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДобавитьЧасКонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="ДобавитьЧасРасширеннаяПодсказка" id="118"/>
+													<Events>
+														<Event name="Click">ДобавитьЧасНажатие</Event>
+													</Events>
+												</PictureDecoration>
+												<PictureDecoration name="Декорация1" id="119">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>2</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>2 часа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Hyperlink>true</Hyperlink>
+													<Picture>
+														<xr:Ref>StdPicture.AppearanceCircleYellow</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="120"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="121"/>
+													<Events>
+														<Event name="Click">Декорация1Нажатие</Event>
+													</Events>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ЗатратыВремени" id="25">
+											<DataPath>Объект.ЗатратыВремени</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ЗатратыВремениКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ЗатратыВремениРасширеннаяПодсказка" id="27"/>
+											<Events>
+												<Event name="OnChange">ЗатратыВремениПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 								<InputField name="СуммаЗаказа" id="88">
 									<DataPath>Объект.СуммаЗаказа</DataPath>
 									<ReadOnly>true</ReadOnly>
@@ -246,6 +375,50 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ДобавитьЧас" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить час</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить час</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="Добавить5Часов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить5 часов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить5 часов</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="Добавить30Мин" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить30 мин</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить30 мин</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
@@ -259,5 +432,51 @@
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.Завершить</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>2</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.НачатьВыполнение</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.Отменить</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>4</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ПередатьНаПроверку</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>1</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.УбратьВАрхив</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>3</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
 	</CommandInterface>
 </Form>

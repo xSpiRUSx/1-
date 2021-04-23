@@ -40,23 +40,6 @@
 			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
 				<Autofill>false</Autofill>
-				<ChildItems>
-					<Button name="СписокНачатьРаботу" id="46">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.НачатьРаботу</CommandName>
-						<ExtendedTooltip name="СписокНачатьРаботуРасширеннаяПодсказка" id="47"/>
-					</Button>
-					<Button name="СписокПередатьНаПроверку" id="48">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ПередатьНаПроверку</CommandName>
-						<ExtendedTooltip name="СписокПередатьНаПроверкуРасширеннаяПодсказка" id="49"/>
-					</Button>
-					<Button name="СписокЗавершить" id="50">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Завершить</CommandName>
-						<ExtendedTooltip name="СписокЗавершитьРасширеннаяПодсказка" id="51"/>
-					</Button>
-				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
 			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
@@ -176,51 +159,50 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="НачатьРаботу" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Начать работу</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Начать работу</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>НачатьРаботу</Action>
-		</Command>
-		<Command name="ПередатьНаПроверку" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Передать на проверку</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Передать на проверку</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ПередатьНаПроверку</Action>
-		</Command>
-		<Command name="Завершить" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Завершить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Завершить</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>Завершить</Action>
-		</Command>
-	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.Завершить</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>2</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.НачатьВыполнение</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.Отменить</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>4</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ПередатьНаПроверку</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.УбратьВАрхив</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.СтатусЗадачи</CommandGroup>
+				<Index>3</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
 </Form>

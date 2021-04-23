@@ -220,6 +220,7 @@
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
 			<Subsystem>Заказы</Subsystem>
 			<Subsystem>БазаЗнаний</Subsystem>
+			<Subsystem>Задачи</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовЦвет</StyleItem>
 			<StyleItem>ДействиеВКолонкеСпискаШрифт</StyleItem>
@@ -1096,10 +1097,16 @@
 			<CommonCommand>УстановитьРасширениеДляРаботыС1СПредприятием</CommonCommand>
 			<CommonCommand>ФайлыВТоме</CommonCommand>
 			<CommonCommand>ВыгрузитьБазуЗнанийВКаталог</CommonCommand>
+			<CommonCommand>НачатьВыполнение</CommonCommand>
+			<CommonCommand>ПередатьНаПроверку</CommonCommand>
+			<CommonCommand>Завершить</CommonCommand>
+			<CommonCommand>УбратьВАрхив</CommonCommand>
+			<CommonCommand>Отменить</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
 			<CommandGroup>Информация</CommandGroup>
 			<CommandGroup>Органайзер</CommandGroup>
 			<CommandGroup>Печать</CommandGroup>
+			<CommandGroup>СтатусЗадачи</CommandGroup>
 			<Constant>АдресПубликацииИнформационнойБазыВИнтернете</Constant>
 			<Constant>ЗаголовокСистемы</Constant>
 			<Constant>ГлавныйУзел</Constant>
@@ -1276,6 +1283,8 @@
 			<Catalog>Проекты</Catalog>
 			<Catalog>ЗаказНаРаботуПрисоединенныеФайлы</Catalog>
 			<Catalog>Информация</Catalog>
+			<Catalog>Задачи</Catalog>
+			<Catalog>ПриоритетыЗадач</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
