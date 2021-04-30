@@ -72,6 +72,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВремяТекущегоСеанса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиВходаПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СостоянияОригиналовПервичныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиGoogle</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

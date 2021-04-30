@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<DataProcessor uuid="f6c7a5b4-c2b8-4cdb-bf6d-0e7954aac9c3">
+	<DataProcessor uuid="81c2fa11-e48c-4fb2-85d9-c8483a59d560">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.Планировщик" category="Object">
-				<xr:TypeId>754c40f1-9b70-4123-9b1c-f68ac4971d04</xr:TypeId>
-				<xr:ValueId>cbb7a5a1-c224-43e6-a4fa-b0f029ec87ca</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorObject.НастройкиGoogle" category="Object">
+				<xr:TypeId>bba85b0c-f22d-432b-83a7-f4aed5a89e7b</xr:TypeId>
+				<xr:ValueId>cfa58ae6-0fbc-441c-8fba-ef4f5e57d6bd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.Планировщик" category="Manager">
-				<xr:TypeId>67051b8f-564f-4506-8101-513378d7be46</xr:TypeId>
-				<xr:ValueId>5119a1c0-1631-42a0-be9c-b639a3298895</xr:ValueId>
+			<xr:GeneratedType name="DataProcessorManager.НастройкиGoogle" category="Manager">
+				<xr:TypeId>daf0c30f-d016-44ad-8287-31ba5b6ab8dc</xr:TypeId>
+				<xr:ValueId>2ba9af95-413b-4bc5-8dc7-50b61ba84af2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Планировщик</Name>
+			<Name>НастройкиGoogle</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Планировщик</v8:content>
+					<v8:content>Настройки google</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>DataProcessor.Планировщик.Form.Форма</DefaultForm>
+			<DefaultForm>DataProcessor.НастройкиGoogle.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
@@ -29,7 +29,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
-			<Form>ФормаНастроек</Form>
+			<Form>ФормаАвторизации</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

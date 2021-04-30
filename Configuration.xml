@@ -913,6 +913,8 @@
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыС1С</CommonModule>
 			<CommonModule>ОбщегоНазначенияСЗ</CommonModule>
+			<CommonModule>ИнтеграцияСГуглСервисамиСЗ</CommonModule>
+			<CommonModule>СЗ_GoogleTasks</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
@@ -1339,6 +1341,7 @@
 			<Enum>ЦветностиИзображения</Enum>
 			<Enum>ЮрФизЛицо</Enum>
 			<Enum>НазначениеПлатежа</Enum>
+			<Enum>ВариантыНастроекГуглСервисов</Enum>
 			<Report>БизнесПроцессы</Report>
 			<Report>Задачи</Report>
 			<Report>ЗависшиеЗадачи</Report>
@@ -1385,6 +1388,7 @@
 			<DataProcessor>НачальнаяСтраница</DataProcessor>
 			<DataProcessor>БыстрыйЗаказ</DataProcessor>
 			<DataProcessor>ВыгрузитьБазуЗнанийВКаталог</DataProcessor>
+			<DataProcessor>НастройкиGoogle</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>ВерсииПодсистемОбластейДанных</InformationRegister>
 			<InformationRegister>БлокировкиСеансовОбластейДанных</InformationRegister>
@@ -1444,6 +1448,7 @@
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>ЧасовыеСтавки</InformationRegister>
+			<InformationRegister>НастройкиПодключенияГуглСервисов</InformationRegister>
 			<AccumulationRegister>Работы</AccumulationRegister>
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
