@@ -25,17 +25,6 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Задача</dataPath>
-			<field>Задача</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Контрагент</dataPath>
-			<field>Контрагент</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Период</dataPath>
 			<field>Период</field>
 			<role>
@@ -44,36 +33,48 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаОборот</dataPath>
-			<field>СуммаОборот</field>
+			<dataPath>Оплачено</dataPath>
+			<field>Оплачено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма оборот</v8:content>
+					<v8:content>Контрагент</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ОплаченоОборот</dataPath>
-			<field>ОплаченоОборот</field>
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаОстаток</dataPath>
+			<field>СуммаОстаток</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ВзаиморасчетыОбороты.Период КАК Период,
-	ВзаиморасчетыОбороты.Контрагент КАК Контрагент,
-	ВзаиморасчетыОбороты.СуммаОборот - ОплаченоОборот КАК СуммаОборот,
-	ВзаиморасчетыОбороты.ОплаченоОборот КАК ОплаченоОборот
+	НАЧАЛОПЕРИОДА(Работы.Период, МЕСЯЦ) КАК Период,
+	Работы.Заказчик КАК Контрагент,
+	Работы.Оплачено КАК Оплачено,
+	ВзаиморасчетыОстатки.СуммаОстаток КАК СуммаОстаток
 ИЗ
-	РегистрНакопления.Взаиморасчеты.Обороты(, , Месяц, ) КАК ВзаиморасчетыОбороты</query>
+	РегистрНакопления.Работы КАК Работы
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрНакопления.Взаиморасчеты.Остатки КАК ВзаиморасчетыОстатки
+		ПО Работы.Регистратор = ВзаиморасчетыОстатки.Задача
+			И Работы.Заказчик = ВзаиморасчетыОстатки.Контрагент
+</query>
 		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
 	</dataSet>
 	<totalField>
-		<dataPath>ОплаченоОборот</dataPath>
-		<expression>Сумма(ОплаченоОборот)</expression>
+		<dataPath>Оплачено</dataPath>
+		<expression>Сумма(Оплачено)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>СуммаОборот</dataPath>
-		<expression>Сумма(СуммаОборот)</expression>
+		<dataPath>СуммаОстаток</dataPath>
+		<expression>Сумма(СуммаОстаток)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -109,16 +110,33 @@
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаОборот</dcsset:field>
+					<dcsset:field>Оплачено</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ОплаченоОборот</dcsset:field>
+					<dcsset:field>СуммаОстаток</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:outputParameters>
@@ -142,7 +160,15 @@
 						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 					</dcsset:order>
 					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Период</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Оплачено</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаОстаток</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
 				</dcsset:point>
 				<dcsset:series>
@@ -156,7 +182,13 @@
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 					</dcsset:order>
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>

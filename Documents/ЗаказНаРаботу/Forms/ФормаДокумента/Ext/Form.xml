@@ -53,6 +53,11 @@
 							<ContextMenu name="ПроектКонтекстноеМеню" id="99"/>
 							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="100"/>
 						</InputField>
+						<InputField name="ВидыОплатыЗаказа" id="125">
+							<DataPath>Объект.ВидыОплатыЗаказа</DataPath>
+							<ContextMenu name="ВидыОплатыЗаказаКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="ВидыОплатыЗаказаРасширеннаяПодсказка" id="127"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа1" id="69">

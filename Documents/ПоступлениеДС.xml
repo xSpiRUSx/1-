@@ -41,7 +41,9 @@
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>
 			<Characteristics/>
-			<BasedOn/>
+			<BasedOn>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказНаРаботу</xr:Item>
+			</BasedOn>
 			<InputByString>
 				<xr:Field>Document.ПоступлениеДС.StandardAttribute.Number</xr:Field>
 			</InputByString>
@@ -61,6 +63,7 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Работы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Взаиморасчеты</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>

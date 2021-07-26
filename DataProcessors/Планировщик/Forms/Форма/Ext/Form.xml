@@ -93,7 +93,7 @@
 					</SearchControlAddition>
 					<ChildItems>
 						<LabelField name="СписокЗадачИЗаказовНаименование" id="17">
-							<DataPath>~СписокЗадачИЗаказов.Наименование</DataPath>
+							<DataPath>СписокЗадачИЗаказов.Наименование</DataPath>
 							<ContextMenu name="СписокЗадачИЗаказовНаименованиеКонтекстноеМеню" id="18"/>
 							<ExtendedTooltip name="СписокЗадачИЗаказовНаименованиеРасширеннаяПодсказка" id="19"/>
 						</LabelField>
@@ -203,8 +203,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2021-04-30T00:00:00</pl:begin>
-					<pl:end>2021-04-30T23:59:59</pl:end>
+					<pl:begin>2021-07-26T00:00:00</pl:begin>
+					<pl:end>2021-07-26T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>BeginTime</pl:itemsTimeRepresentation>
@@ -235,9 +235,8 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	Задачи.Наименование КАК Наименование,
-	Задачи.Приоритет КАК Приоритет
-ИЗ
+	Задачи.Наименование КАК Наименование
+	ИЗ
 	Справочник.Задачи КАК Задачи
 </QueryText>
 				<MainTable>Catalog.Задачи</MainTable>

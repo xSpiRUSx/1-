@@ -51,6 +51,16 @@
 			<CommandName>Form.Command.ПолучитьКалендари</CommandName>
 			<ExtendedTooltip name="ПолучитьКалендариРасширеннаяПодсказка" id="25"/>
 		</Button>
+		<Button name="ПолучитьСобытияКаленаря" id="26">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьСобытияКаленаря</CommandName>
+			<ExtendedTooltip name="ПолучитьСобытияКаленаряРасширеннаяПодсказка" id="27"/>
+		</Button>
+		<Button name="СоздатьКалендарь" id="28">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СоздатьКалендарь</CommandName>
+			<ExtendedTooltip name="СоздатьКалендарьРасширеннаяПодсказка" id="29"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -180,6 +190,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьКалендари</Action>
+		</Command>
+		<Command name="ПолучитьСобытияКаленаря" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить события каленаря</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить события каленаря</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСобытияКаленаря</Action>
+		</Command>
+		<Command name="СоздатьКалендарь" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать календарь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать календарь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКалендарь</Action>
 		</Command>
 	</Commands>
 </Form>

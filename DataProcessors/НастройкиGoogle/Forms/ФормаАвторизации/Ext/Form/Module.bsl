@@ -31,7 +31,7 @@
 	ПараметрыЗапроса = ПараметрыЗапроса + "&access_type=offline" + "&";
 	ПараметрыЗапроса = ПараметрыЗапроса + "&approval_prompt=force" + "&";
 	
-	ПараметрыЗапроса = ПараметрыЗапроса + "scope=https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/calendar";
+	ПараметрыЗапроса = ПараметрыЗапроса + "scope=https://www.googleapis.com/auth/tasks https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.events";
 	АдресАвторизации = "https://accounts.google.com/o/oauth2/auth" + "?";
 	ПолныйАдресАвторизации = АдресАвторизации + ПараметрыЗапроса;
 	СтрокаHTML = ПолныйАдресАвторизации;
