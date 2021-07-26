@@ -21,7 +21,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбщаяКартинка1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаЗаказы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Выручка</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Информация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗадачиПоКонфигурациям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплату</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

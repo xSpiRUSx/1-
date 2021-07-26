@@ -18,6 +18,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Задачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПриоритетыЗадач</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Планировщик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Календари</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -89,18 +89,23 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Attribute uuid="4a260630-d357-408c-9c2f-16eba8b4be30">
+			<Resource uuid="81e3ec6f-475e-4139-bb0d-03f4957cce72">
 				<Properties>
-					<Name>Конфигурация</Name>
+					<Name>Оплачено</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конфигурация</v8:content>
+							<v8:content>Оплачено</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Конфигурации</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -121,22 +126,21 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
-			</Attribute>
-			<Attribute uuid="4adad645-c641-4176-8a1f-e8dd290f4917">
+			</Resource>
+			<Attribute uuid="4a260630-d357-408c-9c2f-16eba8b4be30">
 				<Properties>
-					<Name>Статус</Name>
+					<Name>Конфигурация</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Статус</v8:content>
+							<v8:content>Конфигурация</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.СтатусыЗадач</v8:Type>
+						<v8:Type>cfg:CatalogRef.Конфигурации</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

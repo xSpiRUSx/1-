@@ -193,7 +193,7 @@
 			<MobileApplicationURLs/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
-			<DefaultStyle>Style.Расш_СтильBAS</DefaultStyle>
+			<DefaultStyle>Style.Расш1_Стиль3</DefaultStyle>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -207,7 +207,7 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>UseWithWarnings</ModalityUseMode>
+			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_3_14</CompatibilityMode>
@@ -267,6 +267,14 @@
 			<StyleItem>ЦветТекстаНевыбраннойКартинки</StyleItem>
 			<StyleItem>ЦветФонаПредупреждения</StyleItem>
 			<Style>Расш_СтильBAS</Style>
+			<Style>Расш_СтильBAS1</Style>
+			<Style>Расш1_Стиль1</Style>
+			<Style>Расш1_Стиль2</Style>
+			<Style>Расш1_Стиль3</Style>
+			<Style>Расш1_Стиль4</Style>
+			<Style>Расш1_Стиль5</Style>
+			<Style>Расш1_Стиль6</Style>
+			<Style>Расш1_Стиль7</Style>
 			<CommonPicture>GoogleMaps</CommonPicture>
 			<CommonPicture>ВидСравнения</CommonPicture>
 			<CommonPicture>ВертикальноеПоложениеЦентр</CommonPicture>
@@ -915,6 +923,9 @@
 			<CommonModule>ОбщегоНазначенияСЗ</CommonModule>
 			<CommonModule>ИнтеграцияСГуглСервисамиСЗ</CommonModule>
 			<CommonModule>СЗ_GoogleTasks</CommonModule>
+			<CommonModule>СЗ_HTTPЗапросы</CommonModule>
+			<CommonModule>СЗ_GoogleСервисы</CommonModule>
+			<CommonModule>РаботаСТелеграмм</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
@@ -1003,6 +1014,7 @@
 			<ScheduledJob>УведомлениеИсполнителейОНовыхЗадачах</ScheduledJob>
 			<ScheduledJob>УдалениеПомеченных</ScheduledJob>
 			<ScheduledJob>УдалениеУстаревшихПараметровРаботыВерсийРасширений</ScheduledJob>
+			<ScheduledJob>ОбработатьСообщенияТелеграмм</ScheduledJob>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>ИзменятьЗаданияЗаднимЧислом</FunctionalOption>
 			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
@@ -1176,6 +1188,8 @@
 			<Constant>СпособХраненияФайлов</Constant>
 			<Constant>ХранитьФайлыВТомахНаДиске</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
+			<Constant>ТелеграмIDпоследнегоСообщения</Constant>
+			<Constant>ТелеграмТокенБота</Constant>
 			<CommonForm>АдреснаяКнига</CommonForm>
 			<CommonForm>ВводНаРазныхЯзыках</CommonForm>
 			<CommonForm>БлокировкаРаботыСВнешнимиРесурсами</CommonForm>
@@ -1287,6 +1301,10 @@
 			<Catalog>Информация</Catalog>
 			<Catalog>Задачи</Catalog>
 			<Catalog>ПриоритетыЗадач</Catalog>
+			<Catalog>Календари</Catalog>
+			<Catalog>МоиЗадачи</Catalog>
+			<Catalog>КонтактныеЛицаКонтрагентов</Catalog>
+			<Catalog>Обучение</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1295,6 +1313,7 @@
 			<Document>ЭлектронноеПисьмоИсходящее</Document>
 			<Document>ЗаказНаРаботу</Document>
 			<Document>ПоступлениеДС</Document>
+			<Document>СчетНаОплату</Document>
 			<DocumentJournal>Взаимодействия</DocumentJournal>
 			<Enum>ВариантыВажностиВзаимодействия</Enum>
 			<Enum>ВариантыОчисткиФайлов</Enum>
@@ -1342,6 +1361,7 @@
 			<Enum>ЮрФизЛицо</Enum>
 			<Enum>НазначениеПлатежа</Enum>
 			<Enum>ВариантыНастроекГуглСервисов</Enum>
+			<Enum>ВидыОплатыЗаказов</Enum>
 			<Report>БизнесПроцессы</Report>
 			<Report>Задачи</Report>
 			<Report>ЗависшиеЗадачи</Report>
@@ -1357,6 +1377,7 @@
 			<Report>СведенияОПользователях</Report>
 			<Report>УниверсальныйОтчет</Report>
 			<Report>Выручка</Report>
+			<Report>ЗадачиПоКонфигурациям</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>БлокировкаРаботыПользователей</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаДанныхСверткаСсылокНаПользователейВРазделенныхДанных</DataProcessor>
@@ -1389,6 +1410,7 @@
 			<DataProcessor>БыстрыйЗаказ</DataProcessor>
 			<DataProcessor>ВыгрузитьБазуЗнанийВКаталог</DataProcessor>
 			<DataProcessor>НастройкиGoogle</DataProcessor>
+			<DataProcessor>АРМпрограммиста</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>ВерсииПодсистемОбластейДанных</InformationRegister>
 			<InformationRegister>БлокировкиСеансовОбластейДанных</InformationRegister>
@@ -1449,6 +1471,7 @@
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>ЧасовыеСтавки</InformationRegister>
 			<InformationRegister>НастройкиПодключенияГуглСервисов</InformationRegister>
+			<InformationRegister>МероприятияКалендаря</InformationRegister>
 			<AccumulationRegister>Работы</AccumulationRegister>
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
